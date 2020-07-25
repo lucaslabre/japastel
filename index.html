@@ -37,27 +37,32 @@
 				<legend>Pedidos</legend>
 				<fieldset class="fsEsq">
 					<legend>Pasteis</legend>
-					<div><label class="editPastel">Carne</label>
+					<div class="pasteis">
+						<label class="editPastel">Carne</label>
 						<input class="botoes" type="button" id="mais" onclick="conta(this, 'pCarne'); soma('pCarne', 5);totalParcial('pastel')" value="+1" />
 						<input class="botoes" type="button" id="menos" onclick="conta(this, 'pCarne'); soma('pCarne', 5);totalParcial('pastel')" value="-1" />
 						<input class="impMedio" type="text" id="pCarne" value="0"  />
 					</div>
-					<div><label class="editPastel">Queijo</label>
+					<div class="pasteis">
+						<label class="editPastel">Queijo</label>
 						<input class="botoes" type="button" value="+1" onclick="conta(this, 'pQueijo'); soma('pQueijo', 5);totalParcial('pastel')"/>
 						<input class="botoes" type="button" value="-1" onclick="conta(this, 'pQueijo'); soma('pQueijo', 5);totalParcial('pastel')"/>
 						<input class="impMedio" type="text" id="pQueijo" value="0" />
 					</div>
-					<div><label class="editPastel">Frango c/ catupiri</label>
+					<div class="pasteis">
+						<label class="editPastel">Frango c/ catupiri</label>
 						<input class="botoes" type="button" value="+1" onclick="conta(this, 'pFrango'); soma('pFrango', 5);totalParcial('pastel')"/>
 						<input class="botoes" type="button" value="-1" onclick="conta(this, 'pFrango'); soma('pFrango', 5);totalParcial('pastel')" />
 						<input class="impMedio" type="text" id="pFrango" value="0"/>
 					</div>
-					<div><label class="editPastel">Pizza</label>
+					<div class="pasteis">
+						<label class="editPastel">Pizza</label>
 						<input class="botoes" type="button" value="+1" onclick="conta(this, 'pPizza'); soma('pPizza', 5);totalParcial('pastel')"/>
 						<input class="botoes" type="button" value="-1" onclick="conta(this, 'pPizza'); soma('pPizza', 5);totalParcial('pastel')" />
 						<input class="impMedio" type="text" id="pPizza" value="0" />
 					</div>
-					<div><label class="editPastel">Carne seca c/ catupiry</label>
+					<div class="pasteis">
+						<label class="editPastel">Carne seca c/ catupiry</label>
 						<input class="botoes" type="button" value="+1" onclick="conta(this, 'pCarneSeca'); soma('pCarneSeca', 5);totalParcial('pastel')"/>
 						<input class="botoes" type="button" value="-1" onclick="conta(this, 'pCarneSeca'); soma('pCarneSeca', 5);totalParcial('pastel')" />
 						<input class="impMedio" type="text" id="pCarneSeca" value="0" />
@@ -67,62 +72,74 @@
 
 				<fieldset class="fsDir">
 					<legend>Bebidas:</legend>
-					<div><label class="editBebida">Caldo de cana 1/2L</label>
+					<div class="bebidas">
+						<label class="editBebida">Caldo de cana 1/2L</label>
 						<input class="botoes" type="button" value="+1" onclick="conta(this, 'caldoMeio'); soma('caldoMeio', 6);totalParcial('bebida')" />
 						<input class="botoes" type="button" value="-1" onclick="conta(this, 'caldoMeio'); soma('caldoMeio', 6);totalParcial('bebida')" />
 						<input class="impMedio" type="text" id="caldoMeio" value="0" />
 					</div>
-					<div><label class="editBebida">Caldo de cana 1L</label>
+					<div class="bebidas">
+						<label class="editBebida">Caldo de cana 1L</label>
 						<input class="botoes" type="button" value="+1" onclick="conta(this, 'caldoLitro'); soma('caldoLitro', 11);totalParcial('bebida')" />
 						<input class="botoes" type="button" value="-1" onclick="conta(this, 'caldoLitro'); soma('caldoLitro', 11);totalParcial('bebida')" />
 						<input class="impMedio" type="text" id="caldoLitro" value="0" />
 					</div>
-					<div><label class="editBebida">Guaravita</label>
+					<div class="bebidas">
+						<label class="editBebida">Guaravita</label>
 						<input class="botoes" type="button" value="+1" onclick="conta(this, 'guarav'); soma('guarav', 2.5);totalParcial('bebida')" />
 						<input class="botoes" type="button" value="-1" onclick="conta(this, 'guarav'); soma('guarav', 2.5);totalParcial('bebida')" />
 						<input class="impMedio" type="text" id="guarav" value="0" />
 					</div>
-					<div><label class="editBebida">Coca</label>
+					<div class="bebidas">
+						<label class="editBebida">Coca</label>
 						<input class="botoes" type="button" value="+1" onclick="conta(this, 'coca');somaEspecifico('refri', 5);totalParcial('bebida')" />
 						<input class="botoes" type="button" value="-1" onclick="conta(this, 'coca');somaEspecifico('refri', 5);totalParcial('bebida')" />
 						<input class="impMedio" type="text" name="refri" id="coca" value="0" />
 					</div>
-					<div><label class="editBebida">Coca Zero</label>
+					<div class="bebidas">
+						<label class="editBebida">Coca Zero</label>
 						<input class="botoes" type="button" value="+1" onclick="conta(this, 'cocaZero');somaEspecifico('refri', 5);totalParcial('bebida')" />
 						<input class="botoes" type="button" value="-1" onclick="conta(this, 'cocaZero');somaEspecifico('refri', 5);totalParcial('bebida')" />
 						<input class="impMedio" type="text" name="refri" id="cocaZero" value="0" />
 					</div>
-					<div><label class="editBebida">Guaraná</label>
+					<div class="bebidas">
+						<label class="editBebida">Guaraná</label>
 						<input class="botoes" type="button" value="+1" onclick="conta(this, 'guarana');somaEspecifico('refri', 5);totalParcial('bebida')" />
 						<input class="botoes" type="button" value="-1" onclick="conta(this, 'guarana');somaEspecifico('refri', 5);totalParcial('bebida')" />
 						<input class="impMedio" type="text" name="refri" id="guarana" value="0" />
 					</div>
-					<div><label class="editBebida">Guaraná Zero</label>
+					<div class="bebidas">
+						<label class="editBebida">Guaraná Zero</label>
 						<input class="botoes" type="button" value="+1" onclick="conta(this, 'guaranaZero');somaEspecifico('refri', 5);totalParcial('bebida')" />
 						<input class="botoes" type="button" value="-1" onclick="conta(this, 'guaranaZero');somaEspecifico('refri', 5);totalParcial('bebida')" />
 						<input class="impMedio" type="text" name="refri" id="guaranaZero" value="0" />
 					</div>
-					<div><label class="editBebida">Fanta Uva</label>
+					<div class="bebidas">
+						<label class="editBebida">Fanta Uva</label>
 						<input class="botoes" type="button" value="+1" onclick="conta(this, 'fantaUva');somaEspecifico('refri', 5);totalParcial('bebida')" />
 						<input class="botoes" type="button" value="-1" onclick="conta(this, 'fantaUva');somaEspecifico('refri', 5);totalParcial('bebida')" />
 						<input class="impMedio" type="text" name="refri" id="fantaUva" value="0" />
 					</div>
-					<div><label class="editBebida">Fanta Laranja</label>
+					<div class="bebidas">
+						<label class="editBebida">Fanta Laranja</label>
 						<input class="botoes" type="button" value="+1" onclick="conta(this, 'fantaLaranja');somaEspecifico('refri', 5);totalParcial('bebida')" />
 						<input class="botoes" type="button" value="-1" onclick="conta(this, 'fantaLaranja');somaEspecifico('refri', 5);totalParcial('bebida')" />
 						<input class="impMedio" type="text" name="refri" id="fantaLaranja" value="0" />
 					</div>
-					<div><label class="editBebida">Matte</label>
+					<div class="bebidas">
+						<label class="editBebida">Matte</label>
 						<input class="botoes" type="button" value="+1" onclick="conta(this, 'matte'); soma('matte', 4);totalParcial('bebida')" />
 						<input class="botoes" type="button" value="-1" onclick="conta(this, 'matte'); soma('matte', 4);totalParcial('bebida')" />
 						<input class="impMedio" type="text" id="matte" value="0" />
 					</div>
-					<div><label class="editBebida">Água sem gás</label>
+					<div class="bebidas">
+						<label class="editBebida">Água sem gás</label>
 						<input class="botoes" type="button" value="+1" onclick="conta(this, 'aguaS'); soma('aguaS', 2.5);totalParcial('bebida')" />
 						<input class="botoes" type="button" value="-1" onclick="conta(this, 'aguaS'); soma('aguaS', 2.5);totalParcial('bebida')" />
 						<input class="impMedio" type="text" id="aguaS" value="0" />
 					</div>
-					<div><label class="editBebida">Água com gás</label>
+					<div class="bebidas">
+						<label class="editBebida">Água com gás</label>
 						<input class="botoes" type="button" value="+1" onclick="conta(this, 'aguaC'); soma('aguaC', 3);totalParcial('bebida')" />
 						<input class="botoes" type="button" value="-1" onclick="conta(this, 'aguaC'); soma('aguaC', 3);totalParcial('bebida')" />
 						<input class="impMedio" type="text" id="aguaC" value="0" />
@@ -132,27 +149,32 @@
 
 				<fieldset class="fsEsq">
 					<legend>Bolinhos de aipim:</legend>
-					<div><label class="editBolinho">Carne moída</label>
+					<div class="bolinhos">
+						<label class="editBolinho">Carne moída</label>
 						<input class="botoes" type="button" value="+1" onclick="conta(this, 'bCarneMoida'); soma('bCarneMoida', 5);totalParcial('bolinho')" />
 						<input class="botoes" type="button" value="-1" onclick="conta(this, 'bCarneMoida'); soma('bCarneMoida', 5);totalParcial('bolinho')" />
 						<input class="impMedio" type="text" id="bCarneMoida" value="0" />
 					</div>
-					<div><label class="editBolinho">Carne seca</label>
+					<div class="bolinhos">
+						<label class="editBolinho">Carne seca</label>
 						<input class="botoes" type="button" value="+1" onclick="conta(this, 'bCarneSeca'); soma('bCarneSeca', 5);totalParcial('bolinho')" />
 						<input class="botoes" type="button" value="-1" onclick="conta(this, 'bCarneSeca'); soma('bCarneSeca', 5);totalParcial('bolinho')" />
 						<input class="impMedio" type="text" id="bCarneSeca" value="0" />
 					</div>
-					<div><label class="editBolinho">Queijo</label>
+					<div class="bolinhos">
+						<label class="editBolinho">Queijo</label>
 						<input class="botoes" type="button" value="+1" onclick="conta(this, 'bQueijo'); soma('bQueijo', 5);totalParcial('bolinho')" />
 						<input class="botoes" type="button" value="-1" onclick="conta(this, 'bQueijo'); soma('bQueijo', 5);totalParcial('bolinho')" />
 						<input class="impMedio" type="text" id="bQueijo" value="0" />
 					</div>
-					<div><label class="editBolinho">Kibe</label>
+					<div class="bolinhos">
+						<label class="editBolinho">Kibe</label>
 						<input class="botoes" type="button" value="+1" onclick="conta(this, 'kibe'); soma('kibe', 5);totalParcial('bolinho')" />
 						<input class="botoes" type="button" value="-1" onclick="conta(this, 'kibe'); soma('kibe', 5);totalParcial('bolinho')" />
 						<input class="impMedio" type="text" id="kibe" value="0" />
 					</div>
-					<div><label class="editBolinho">Massa</label>
+					<div class="bolinhos">
+						<label class="editBolinho">Massa</label>
 						<input class="botoes" type="button" value="+1" onclick="conta(this, 'massa'); soma('massa', 10);totalParcial('bolinho')" />
 						<input class="botoes" type="button" value="-1" onclick="conta(this, 'massa'); soma('massa', 10);totalParcial('bolinho')" />
 						<input class="impMedio" type="text" id="massa" value="0" />
